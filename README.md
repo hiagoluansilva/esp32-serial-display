@@ -1,32 +1,37 @@
-🇧🇷 Português | 🇺🇸 [English](#english)
+# ESP32 Serial Display — Protocolo Y/W/X com LCD
 
-# esp32-serial-display
-
-ESP32 com protocolo serial e display LCD I2C 16×2.
-
-| Evento | Display |
-|--------|--------|
-| Recebe `'Y'` | `Begin` |
-| Recebe `'W'` | `End` |
-
-**Baud rate:** 9600
-
-Centro Tecnológico Liberato — Novo Hamburgo/RS
+🇧🇷 **Português** | 🇺🇸 [English](#english)
 
 ---
 
-<a name="english"></a>
-🇧🇷 [Português](#) | 🇺🇸 English
+## Português
 
-# esp32-serial-display
+Versão do protocolo serial Y/W/X com exibição de dados em **LCD**, adicionando feedback visual local ao ESP32.
 
-ESP32 with serial protocol and I2C LCD 16×2 display.
+### O que faz
+- Implementa o mesmo protocolo serial **Y/W/X** (9600 bps)
+- Exibe os dados recebidos/enviados em **display LCD**
+- Adiciona feedback visual local além da comunicação serial
 
-| Event | Display |
-|-------|--------|
-| Receives `'Y'` | `Begin` |
-| Receives `'W'` | `End` |
+### Diferença em relação à versão base
+- Inclui driver LCD e atualiza o display a cada quadro recebido
 
-**Baud rate:** 9600
+### Plataforma
+ESP32 — Arduino Framework
 
-Centro Tecnológico Liberato — Novo Hamburgo/RS, Brazil
+---
+
+## English
+
+Y/W/X serial protocol version with **LCD** display, adding local visual feedback to the ESP32.
+
+### What it does
+- Implements the same **Y/W/X** serial protocol (9600 bps)
+- Displays received/sent data on **LCD**
+- Adds local visual feedback beyond serial communication
+
+### Difference from base version
+- Includes LCD driver and updates display on each received frame
+
+### Platform
+ESP32 — Arduino Framework
